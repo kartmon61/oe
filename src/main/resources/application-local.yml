@@ -1,0 +1,41 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  datasource:
+    url: jdbc:mysql://oe-db.c4j5dvjqnlwm.ap-northeast-2.rds.amazonaws.com:3306/oe?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: oeadmin
+    password: oe52oe52!
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: onuelissue@gmail.com
+    password: oeoe_52!@
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+            required: true
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 367035526099-54cdnd5v7dc62q4r9en7f5jtppt80ksn.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - profile
+              - email
+
+logging.level:
+  org.hibernate.SQL: debug
+  #org.hibernate.type: trace

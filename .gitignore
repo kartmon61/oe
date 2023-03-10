@@ -1,6 +1,10 @@
 .gradle
 .idea
 .env
+gradlew
+gradlew.bat
+gradle/
+.gradle/
 ### Java template
 # Compiled class file
 *.class

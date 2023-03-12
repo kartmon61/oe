@@ -32,3 +32,4 @@ gradle/
 hs_err_pid*
 
 build/
+src/main/resources/application-local.yml
